@@ -1,0 +1,43 @@
+.slider {
+	position: relative;
+}
+
+.slider__viewport {
+	width: 100%;
+	overflow: hidden;
+	position: relative;
+}
+
+.slider__wrap {
+	display: flex;
+	flex-wrap: wrap;
+	width: 200%;
+	position: relative;
+	left: 0;
+	top: 0;
+}
+
+.slider__item {
+	width: 16.6%;
+	margin-bottom: 60px;
+}
+
+.slider__control._left {
+	left: 0;
+}
+
+.slider__control._right {
+	right: 0;
+}
+
+@media screen and (max-width: 1200px) {
+	.slider__item {
+		width: 25%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.slider__item {
+	    width: 50%;
+	}
+}

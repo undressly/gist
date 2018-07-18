@@ -1,0 +1,27 @@
+// Font
+@mixin fonts($font-family, $font-name, $font-weight, $font-style) {
+    @if $font-style == "italic" {
+        @font-face {
+            font-family: $font-family;
+            src: url("../fonts/#{$font-name}-#{$font-weight}i.woff2") format("woff2"),
+                 url("../fonts/#{$font-name}-#{$font-weight}i.woff") format("woff");
+            font-weight: $font-weight;
+            font-style: $font-style;
+        }
+    } @else {
+        @font-face {
+            font-family: $font-family;
+            src: url("../fonts/#{$font-name}-#{$font-weight}.woff2") format("woff2"),
+                 url("../fonts/#{$font-name}-#{$font-weight}.woff") format("woff");
+            font-weight: $font-weight;
+            font-style: $font-style;
+        }
+    }
+}
+
+//Adaptive
+@mixin adaptive($media-width) {
+    @media screen and (max-width: #{$media-width}px) {
+        @content;
+    }
+}

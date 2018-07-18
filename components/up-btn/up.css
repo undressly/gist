@@ -1,0 +1,42 @@
+.up-button {
+	display: none;
+	width: 50px;
+	height: 50px;
+	padding: 0;
+    border: none;
+	border-radius: 5px;
+	background-color: #5dd06d;
+	position: fixed;
+	right: 50px;
+	bottom: 50px;
+	cursor: pointer;
+	opacity: 0.5;
+}
+
+.up-button:hover {
+	opacity: 1;
+}
+
+.up-button::before {
+	content: "";
+	width: 4px;
+	height: 23px;
+	background-color: #fff;
+	position: absolute;
+	top: 17px;
+	left: 23px;
+}
+
+.up-button::after {
+	content: "";
+	width: 15px;
+	height: 15px;
+	border-top: 3px solid #fff;
+	border-right: 3px solid #fff;
+	position: absolute;
+	top: 16px;
+	left: 16px;
+	-webkit-transform: rotate(-45deg);
+	    -ms-transform: rotate(-45deg);
+	        transform: rotate(-45deg);
+}
