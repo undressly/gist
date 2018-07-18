@@ -20,7 +20,7 @@
 }
 
 //Adaptive
-@mixin adaptive($media-width) {
+@mixin media($media-width) {
     @media screen and (max-width: #{$media-width}px) {
         @content;
     }

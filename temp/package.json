@@ -1,18 +1,4 @@
 {
-  "name": "dj",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+ssh://git@bitbucket.org/undressly/dj.git"
-  },
-  "author": "undressly",
-  "license": "ISC",
-  "homepage": "https://bitbucket.org/undressly/dj#readme",
   "devDependencies": {
     "browser-sync": "^2.24.4",
     "del": "^3.0.0",
@@ -22,5 +8,6 @@
     "gulp-plumber": "^1.2.0",
     "gulp-rename": "^1.2.3",
     "gulp-sass": "^4.0.1"
-  }
+  },
+  "author": "undressly"
 }
