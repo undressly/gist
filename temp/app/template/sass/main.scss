@@ -1,5 +1,13 @@
-@import "utils/variables";
-@import "utils/mixins";
-@import "utils/fonts";
+@import "helpers/variables";
+@import "helpers/mixins";
 
-@import "common/general";
+@import "base/general";
+@import "base/fonts";
+
+@import "components/button";
+@import "components/navigation";
+@import "components/title";
+
+@import "layout/header";
+
+@import "pages/content";
