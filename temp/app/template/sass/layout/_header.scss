@@ -77,7 +77,7 @@
         }
     }
 
-    @include adaptive(800) {
+    @include media(800) {
         display: block;
     }
 }
